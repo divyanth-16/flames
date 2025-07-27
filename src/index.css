@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+.result-title {
+  background: linear-gradient(to right, #d946ef, #f472b6); /* soft pink-purple */
+ background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: flicker 2s infinite;
+  font-weight: bolder;
+  margin-bottom: 10px;
+  font-size: larger;
+}
