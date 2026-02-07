@@ -55,7 +55,7 @@ const EnterNames = () => {
     if (name1 === '' && name2 === '') {
       setreresult('1');
       setResult('None');
-      setErrorCode('1'); // ✅ Show error
+      setErrorCode('1');
       return;
     } else if (name1 === '' && name2 !== '') {
       setreresult('2');
@@ -66,6 +66,16 @@ const EnterNames = () => {
       setreresult('3');
       setResult('None');
       setErrorCode('3');
+      return;
+    }
+    else if(n1 == 'shaziya' && n2 == 'divyanth' ||n1 == 'divyanth' && n2 == 'shaziya'){
+      setreresult(flames[1]);
+    setResult(meaningMap[flames[1]]);
+      return;
+    }
+    else if(n1 == 'shaziyaalsyed' && n2 == 'divyanthpenki' ||n1 == 'divyanthpenki' && n2 == 'shaziyaalsyed'){
+      setreresult(flames[3]);
+    setResult(meaningMap[flames[3]]);
       return;
     }
 
